@@ -18,7 +18,7 @@ case $DECISION in
         python make_standalone_toolchain.py --arch $TOOLCHAIN_ARCH --api $TOOLCHAIN_API --stl=libc++ --install-dir $ANDROID_NDK/toolchains/$TOOLCHAIN_ARCH-androideabi-clang-$TOOLCHAIN_API
         echo "Toolchain created"
         STANDALONE_TOOLCHAIN=$ANDROID_NDK/toolchains/$TOOLCHAIN_API-androideabi-clang-$TOOLCHAIN_API
-        TOOLCHAIN_PREFIX=$TOOLCHAIN_ARCH-androideabi
+        TOOLCHAIN_PREFIX=$TOOLCHAIN_ARCH-linux-androideabi
         cd $CURRENT_DIR
         ;;
     [Nn]* )
