@@ -27,7 +27,7 @@ ifeq ($(PKGDATA_OPTS),)
 PKGDATA_OPTS = -O $(top_builddir)/data/icupkg.inc
 endif
 ifeq ($(PKGDATA_VERSIONING),)
-PKGDATA_VERSIONING = -r $(SO_TARGET_VERSION)
+PKGDATA_VERSIONING =
 endif
 
 # This allows all the data to be in one directory
